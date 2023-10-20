@@ -86,6 +86,11 @@
 		025377712AE2B58B003F8DDC /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377702AE2B58B003F8DDC /* SideMenuView.swift */; };
 		025377732AE2B5B0003F8DDC /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377722AE2B5B0003F8DDC /* SideMenuOptionView.swift */; };
 		025377752AE2B5C9003F8DDC /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377742AE2B5C9003F8DDC /* SideMenuHeaderView.swift */; };
+		0253777A2AE2B709003F8DDC /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377792AE2B709003F8DDC /* TextArea.swift */; };
+		0253777C2AE2B72D003F8DDC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253777B2AE2B72D003F8DDC /* ImagePicker.swift */; };
+		0253777E2AE2B74B003F8DDC /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253777D2AE2B74B003F8DDC /* CustomTextField.swift */; };
+		025377802AE2B766003F8DDC /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253777F2AE2B766003F8DDC /* CustomSecureField.swift */; };
+		025377822AE2B782003F8DDC /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377812AE2B782003F8DDC /* LazyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +146,11 @@
 		025377702AE2B58B003F8DDC /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		025377722AE2B5B0003F8DDC /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
 		025377742AE2B5C9003F8DDC /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		025377792AE2B709003F8DDC /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		0253777B2AE2B72D003F8DDC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		0253777D2AE2B74B003F8DDC /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0253777F2AE2B766003F8DDC /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		025377812AE2B782003F8DDC /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +256,7 @@
 		020F1C322AE1FE0200B73DA4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				025377762AE2B6CD003F8DDC /* Views */,
 				020F1C332AE1FE1500B73DA4 /* Constants.swift */,
 			);
 			path = Utils;
@@ -408,6 +419,18 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
+		025377762AE2B6CD003F8DDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				025377792AE2B709003F8DDC /* TextArea.swift */,
+				0253777B2AE2B72D003F8DDC /* ImagePicker.swift */,
+				0253777D2AE2B74B003F8DDC /* CustomTextField.swift */,
+				0253777F2AE2B766003F8DDC /* CustomSecureField.swift */,
+				025377812AE2B782003F8DDC /* LazyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,16 +535,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0253777E2AE2B74B003F8DDC /* CustomTextField.swift in Sources */,
 				020F1C4A2AE2AA3500B73DA4 /* FeedViewModel.swift in Sources */,
 				020F1C342AE1FE1500B73DA4 /* Constants.swift in Sources */,
 				0253776E2AE2B48F003F8DDC /* NotificationCell.swift in Sources */,
+				0253777C2AE2B72D003F8DDC /* ImagePicker.swift in Sources */,
 				020F1C2F2AE1FD8000B73DA4 /* AuthViewModel.swift in Sources */,
+				025377822AE2B782003F8DDC /* LazyView.swift in Sources */,
 				0253776A2AE2B456003F8DDC /* NotificationsView.swift in Sources */,
 				020F1C712AE2AE5100B73DA4 /* NewMessageView.swift in Sources */,
 				020F1C372AE1FE4700B73DA4 /* User.swift in Sources */,
 				020F1C6B2AE2ADAA00B73DA4 /* ChatView.swift in Sources */,
+				025377802AE2B766003F8DDC /* CustomSecureField.swift in Sources */,
 				020F1C3D2AE2011D00B73DA4 /* Notifications.swift in Sources */,
 				020F1C422AE2A98800B73DA4 /* ProfileViewModel.swift in Sources */,
+				0253777A2AE2B709003F8DDC /* TextArea.swift in Sources */,
 				020F1C5B2AE2AC0C00B73DA4 /* ProfileHeaderView.swift in Sources */,
 				020F1C482AE2A9F600B73DA4 /* SearchViewModel.swift in Sources */,
 				0253775F2AE2B346003F8DDC /* SearchView.swift in Sources */,
