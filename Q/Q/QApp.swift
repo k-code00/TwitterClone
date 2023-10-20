@@ -10,6 +10,7 @@ import Firebase
 
 @main
 struct QApp: App {
+    @StateObject var viewModel = AuthViewModel()
     
     init() {
         FirebaseApp.configure()
@@ -18,6 +19,7 @@ struct QApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }
