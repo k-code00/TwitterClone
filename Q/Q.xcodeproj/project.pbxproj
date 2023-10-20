@@ -78,6 +78,14 @@
 		0253775B2AE2B308003F8DDC /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253775A2AE2B308003F8DDC /* UserCell.swift */; };
 		0253775D2AE2B320003F8DDC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253775C2AE2B320003F8DDC /* SearchBar.swift */; };
 		0253775F2AE2B346003F8DDC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253775E2AE2B346003F8DDC /* SearchView.swift */; };
+		025377622AE2B3B8003F8DDC /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377612AE2B3B8003F8DDC /* FeedView.swift */; };
+		025377652AE2B3E0003F8DDC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377642AE2B3E0003F8DDC /* MainTabView.swift */; };
+		0253776A2AE2B456003F8DDC /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377692AE2B456003F8DDC /* NotificationsView.swift */; };
+		0253776C2AE2B479003F8DDC /* NotificationsTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253776B2AE2B479003F8DDC /* NotificationsTweetView.swift */; };
+		0253776E2AE2B48F003F8DDC /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253776D2AE2B48F003F8DDC /* NotificationCell.swift */; };
+		025377712AE2B58B003F8DDC /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377702AE2B58B003F8DDC /* SideMenuView.swift */; };
+		025377732AE2B5B0003F8DDC /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377722AE2B5B0003F8DDC /* SideMenuOptionView.swift */; };
+		025377752AE2B5C9003F8DDC /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025377742AE2B5C9003F8DDC /* SideMenuHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +133,14 @@
 		0253775A2AE2B308003F8DDC /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		0253775C2AE2B320003F8DDC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		0253775E2AE2B346003F8DDC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		025377612AE2B3B8003F8DDC /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		025377642AE2B3E0003F8DDC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		025377692AE2B456003F8DDC /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		0253776B2AE2B479003F8DDC /* NotificationsTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsTweetView.swift; sourceTree = "<group>"; };
+		0253776D2AE2B48F003F8DDC /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		025377702AE2B58B003F8DDC /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		025377722AE2B5B0003F8DDC /* SideMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionView.swift; sourceTree = "<group>"; };
+		025377742AE2B5C9003F8DDC /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,7 +207,6 @@
 				020F1C2D2AE1FD6400B73DA4 /* ViewModels */,
 				020F1BF02AE1FB9B00B73DA4 /* API */,
 				020F1BE22AE1FB3900B73DA4 /* QApp.swift */,
-				020F1BE42AE1FB3900B73DA4 /* ContentView.swift */,
 				020F1BE62AE1FB3C00B73DA4 /* Assets.xcassets */,
 				020F1BE82AE1FB3C00B73DA4 /* Preview Content */,
 			);
@@ -250,6 +265,10 @@
 		020F1C3F2AE2021C00B73DA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0253776F2AE2B565003F8DDC /* SideMenu */,
+				025377682AE2B440003F8DDC /* Notifications */,
+				025377632AE2B3D0003F8DDC /* Main */,
+				025377602AE2B3AC003F8DDC /* Feed */,
 				025377592AE2B2FA003F8DDC /* Search */,
 				025377542AE2B27F003F8DDC /* Authentication */,
 				025377492AE2B1C0003F8DDC /* Tweets */,
@@ -350,6 +369,43 @@
 				0253775E2AE2B346003F8DDC /* SearchView.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		025377602AE2B3AC003F8DDC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				025377612AE2B3B8003F8DDC /* FeedView.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		025377632AE2B3D0003F8DDC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				025377642AE2B3E0003F8DDC /* MainTabView.swift */,
+				020F1BE42AE1FB3900B73DA4 /* ContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		025377682AE2B440003F8DDC /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				025377692AE2B456003F8DDC /* NotificationsView.swift */,
+				0253776B2AE2B479003F8DDC /* NotificationsTweetView.swift */,
+				0253776D2AE2B48F003F8DDC /* NotificationCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		0253776F2AE2B565003F8DDC /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				025377702AE2B58B003F8DDC /* SideMenuView.swift */,
+				025377722AE2B5B0003F8DDC /* SideMenuOptionView.swift */,
+				025377742AE2B5C9003F8DDC /* SideMenuHeaderView.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,7 +514,9 @@
 			files = (
 				020F1C4A2AE2AA3500B73DA4 /* FeedViewModel.swift in Sources */,
 				020F1C342AE1FE1500B73DA4 /* Constants.swift in Sources */,
+				0253776E2AE2B48F003F8DDC /* NotificationCell.swift in Sources */,
 				020F1C2F2AE1FD8000B73DA4 /* AuthViewModel.swift in Sources */,
+				0253776A2AE2B456003F8DDC /* NotificationsView.swift in Sources */,
 				020F1C712AE2AE5100B73DA4 /* NewMessageView.swift in Sources */,
 				020F1C372AE1FE4700B73DA4 /* User.swift in Sources */,
 				020F1C6B2AE2ADAA00B73DA4 /* ChatView.swift in Sources */,
@@ -471,9 +529,12 @@
 				020F1C652AE2AD6000B73DA4 /* ConversationsView.swift in Sources */,
 				020F1C462AE2A9D300B73DA4 /* NotificationsViewModel.swift in Sources */,
 				025377582AE2B2DB003F8DDC /* RegistrationView.swift in Sources */,
+				025377732AE2B5B0003F8DDC /* SideMenuOptionView.swift in Sources */,
 				0253775B2AE2B308003F8DDC /* UserCell.swift in Sources */,
 				025377562AE2B28D003F8DDC /* LoginView.swift in Sources */,
 				020F1C4F2AE2AB0F00B73DA4 /* TweetActionViewModel.swift in Sources */,
+				025377712AE2B58B003F8DDC /* SideMenuView.swift in Sources */,
+				025377752AE2B5C9003F8DDC /* SideMenuHeaderView.swift in Sources */,
 				020F1C542AE2AB5E00B73DA4 /* ConversationsViewModel.swift in Sources */,
 				020F1C392AE1FFF200B73DA4 /* Tweet.swift in Sources */,
 				020F1C562AE2AB7300B73DA4 /* ChatViewModel.swift in Sources */,
@@ -484,6 +545,7 @@
 				0253774B2AE2B1D2003F8DDC /* TweetCell.swift in Sources */,
 				020F1C692AE2AD9200B73DA4 /* MessageInputView.swift in Sources */,
 				020F1C3B2AE2000900B73DA4 /* Message.swift in Sources */,
+				025377622AE2B3B8003F8DDC /* FeedView.swift in Sources */,
 				020F1C592AE2ABDD00B73DA4 /* UserProfileView.swift in Sources */,
 				020F1C5F2AE2AC4A00B73DA4 /* FilterButttonView.swift in Sources */,
 				025377532AE2B267003F8DDC /* ReplyCell.swift in Sources */,
@@ -492,8 +554,10 @@
 				020F1C6F2AE2AE3100B73DA4 /* MessageView.swift in Sources */,
 				020F1BE32AE1FB3900B73DA4 /* QApp.swift in Sources */,
 				020F1C5D2AE2AC2A00B73DA4 /* ProfileActionButtonView.swift in Sources */,
+				0253776C2AE2B479003F8DDC /* NotificationsTweetView.swift in Sources */,
 				020F1C442AE2A9AE00B73DA4 /* EditProfileViewModel.swift in Sources */,
 				020F1C4C2AE2AAD400B73DA4 /* SideMenuViewModel.swift in Sources */,
+				025377652AE2B3E0003F8DDC /* MainTabView.swift in Sources */,
 				0253775D2AE2B320003F8DDC /* SearchBar.swift in Sources */,
 				020F1C2C2AE1FD2400B73DA4 /* UserService.swift in Sources */,
 				0253774F2AE2B208003F8DDC /* TweetDetailView.swift in Sources */,
