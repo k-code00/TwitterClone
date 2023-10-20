@@ -18,7 +18,7 @@ class TweetActionViewModel: ObservableObject {
     }
     
     func likeTweet() {
-        guard let uid = AuthViewModel.shared.userSession?.id else { return }
+        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         let tweetLikesRef = COLLECTION_TWEETS.document(tweet.id).collection("tweet-likes")
         let userLikesRef = COLLECTION_USERS.document(uid).collection("user-likes")
         
@@ -34,7 +34,7 @@ class TweetActionViewModel: ObservableObject {
     }
     
     func unlikeTweet() {
-        guard let uid = AuthViewModel.shared.userSession?.id else { return }
+        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         let tweetLikesRef = COLLECTION_TWEETS.document(tweet.id).collection("tweet-likes")
         let userLikesRef = COLLECTION_USERS.document(uid).collection("user-likes")
         

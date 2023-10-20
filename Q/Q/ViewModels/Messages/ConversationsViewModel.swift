@@ -16,7 +16,7 @@ class ConversationsViewModel: ObservableObject {
     }
     
     func fetchRecentMessages() {
-        guard let uid = AuthViewModel.shared.userSession?.id else { return }
+        guard let uid = AuthViewModel.shared.userSession?.uid else { return }
         
         let query = COLLECTION_MESSAGES.document(uid).collection("recent-messages")
         query.order(by: "timestamp", descending: true)
